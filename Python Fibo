@@ -1,17 +1,3 @@
-##The equation is num1 + num2 = sum, then num2 becomes the sum, and num1 becomes num2.
-#num1 = 1
-#num2 = 1
-##The loop of the equation. The number after range determines how much you calculate.
-#for sum in range(10):
-#    sum = num1 + num2
-#    num1 = num2
-#    num2 = sum
-#    print(sum)
-
-# Your output is incorrect with the above code. 
-# Your output is missing the first 3 in the sequence. You should see 0 1 1 2 3 5 8 13...
-# See the below solution
-
 # Initialize variables
 num1 = 0
 num2 = 1

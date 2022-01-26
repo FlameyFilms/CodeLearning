@@ -1,0 +1,9 @@
+#The equation is num1 + num2 = sum, then num2 becomes the sum, and num1 becomes num2.
+num1 = 1
+num2 = 1
+#The loop of the equation. The number after range determines how much you calculate.
+for sum in range(10):
+    sum = num1 + num2
+    num1 = num2
+    num2 = sum
+    print(sum)

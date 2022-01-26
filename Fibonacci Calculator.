@@ -10,7 +10,7 @@ namespace Fibo{
         //Third number of calculation, the sum.
         int num3; 
         //By changing the value of what multiplier is it runs the loop that many times. 
-         for(int multiplier = 0; multiplier < 25; multiplier++) {
+         for(int multiplier = 0; multiplier < 10; multiplier++) {
             //Adds the numbers into the sum.
             num3 = num1 + num2;
             //Takes the value of the first number and makes it the second.

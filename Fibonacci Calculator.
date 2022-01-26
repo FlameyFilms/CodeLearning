@@ -4,13 +4,15 @@ namespace Fibo{
     class program {
         static void Main(string[] args) {
         //First number of calculation.
-        int num1 = 1;
+        int num1 = 0;
         //Second number of calculation.
         int num2 = 1;
         //Third number of calculation, the sum.
         int num3; 
         //By changing the value of what multiplier is it runs the loop that many times. 
          for(int multiplier = 0; multiplier < 10; multiplier++) {
+            Console.WriteLine(num1);
+
             //Adds the numbers into the sum.
             num3 = num1 + num2;
             //Takes the value of the first number and makes it the second.
@@ -18,23 +20,10 @@ namespace Fibo{
             //Takes the value of the second number and makes it the value of the old sum.
             num2 = num3;
             //Prints the sum of the calculation (The next number of the Fibonacci Sequence.)
-          Console.WriteLine(num3);
             //Repeats until loop is over.
          }
         }
      }
   }
 
-/*
-* 23
-* 5
-* 8
-* 13
-* 21
-* 34
-* 55
-* 89
-* 144
-* 
-* Your output is incorrect. Let me know how you fix it. =)
-*/
+//I believe I fixed it, and updated the sequence to be correct :>.

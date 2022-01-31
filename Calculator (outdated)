@@ -56,3 +56,5 @@ Console.ReadKey();
 }
 }
 
+// Can you clean this up a bit? Indentation makes the code much more legible. Good work so far. Needs some work but we will get there
+// Lets get it cleaned up then I will assign you another task on the same code.

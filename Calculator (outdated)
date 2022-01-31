@@ -9,52 +9,52 @@ public static void Main()
     Console.WriteLine("The last number is your result.");
     Console.WriteLine("If you wish to do further calculations, simply enter your equation sign followed by enter, then your second number followed by enter, and repeat.");
     Console.WriteLine("If you make an error reopen program.");
-double num1;
-double num2;
-// Gets first number, sign, and second number.
-num1 = Convert.ToDouble(Console.ReadLine());
-var equation = Console.ReadLine();
-num2 = Convert.ToDouble(Console.ReadLine());
-// All different possible signs.
-double num3;
-double num4;
-double num5;
-double num6;
-num3 = num1 + num2;
-num4 = num1 - num2;
-num5 = num1 * num2;
-num6 = num1 / num2;
-// Checks for equations. and executes them.
-  for(int multiplier = 0; multiplier < 1; multiplier--) {
-if (equation == "+")  {
-Console.Write(num3);
-num1 = num3;
-}
-if (equation == "-")  {
-Console.Write(num4);
-num1 = num4;
-}
-if (equation == "*")  {
-Console.Write(num5);
-num1 = num5;
-}
-if (equation == "/")  {
-Console.Write(num6);
-num1 = num6;
+    double num1;
+    double num2;
+    // Gets first number, sign, and second number.
+    num1 = Convert.ToDouble(Console.ReadLine());
+    var equation = Console.ReadLine();
+    num2 = Convert.ToDouble(Console.ReadLine());
+    // All different possible signs.
+        double num3;
+        double num4;
+        double num5;
+        double num6;
+        num3 = num1 + num2;
+        num4 = num1 - num2;
+        num5 = num1 * num2;
+        num6 = num1 / num2;
+    // Checks for equations. and executes them.
+    for(int multiplier = 0; multiplier < 1; multiplier--) {
+        if (equation == "+")  {
+            Console.Write(num3);
+            num1 = num3;
+    }
+        if (equation == "-")  {
+            Console.Write(num4);
+            num1 = num4;
+    }
+        if (equation == "*")  {
+            Console.Write(num5);
+            num1 = num5;
+    }
+        if (equation == "/")  {
+            Console.Write(num6);
+            num1 = num6;
 
-} 
-//Repeats equation but the first number is now the value of the sum.
-Console.WriteLine();
-equation = Console.ReadLine();
-num2 = Convert.ToDouble(Console.ReadLine());
-num3 = num1 + num2;
-num4 = num1 - num2;
-num5 = num1 * num2;
-num6 = num1 / num2;
-}
-Console.ReadKey();
-}
-}
+    } 
+    //Repeats equation but the first number is now the value of the sum.
+        Console.WriteLine();
+        equation = Console.ReadLine();
+        num2 = Convert.ToDouble(Console.ReadLine());
+        num3 = num1 + num2;
+        num4 = num1 - num2;
+        num5 = num1 * num2;
+        num6 = num1 / num2;
+    }
+    Console.ReadKey();
+    }
+    }
 
-// Can you clean this up a bit? Indentation makes the code much more legible. Good work so far. Needs some work but we will get there
-// Lets get it cleaned up then I will assign you another task on the same code.
+    // Can you clean this up a bit? Indentation makes the code much more legible. Good work so far. Needs some work but we will get there
+    // Lets get it cleaned up then I will assign you another task on the same code.

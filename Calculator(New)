@@ -41,3 +41,7 @@ switch(equation)
 }
 }
 }
+
+// Good work so far.
+// Can you find a way to handle this without lines 19 - 22
+

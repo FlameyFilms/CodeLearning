@@ -16,24 +16,20 @@ num1 = Convert.ToDouble(Console.ReadLine());
 var equation = Console.ReadLine();
 num2 = Convert.ToDouble(Console.ReadLine());
 // All different possible signs.
-double num3 = num1 + num2;
-double num4 = num1 - num2;
-double num5 = num1 * num2;
-double num6 = num1 / num2;
 // Runs calculation based on input.
 switch(equation)
 {
   case "+":
-    Console.Write(num3);
+    Console.Write(num1 + num2);
     break;
   case "-":
-    Console.Write(num4);
+    Console.Write(num1 - num2);
     break;
   case "*":
-    Console.Write(num5);
+    Console.Write(num1 * num2);
     break;
     case "/":
-    Console.Write(num6);
+    Console.Write(num1 / num2);
     break;
   default:
     ;
@@ -42,6 +38,4 @@ switch(equation)
 }
 }
 
-// Good work so far.
-// Can you find a way to handle this without lines 19 - 22
-
+// I did it, I removed the need for variables like num3, num4, etc. I was overthinking it the whole time lol.

@@ -39,3 +39,8 @@ switch(equation)
 }
 
 // I did it, I removed the need for variables like num3, num4, etc. I was overthinking it the whole time lol.
+
+// Great work. The main part of programming is to find a way to have the code be as flexible as possible
+// avoid hard coding any variables and let the code manipulate what it needs to in order to process
+// any and all requests seemlessly and efficiently.
+// I'll start thinking of the next thing to code. I'll get back to you later on.

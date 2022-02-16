@@ -1,0 +1,11 @@
+
+
+num1 = int(input())
+equation = input()
+num2 = int(input())
+
+if equation == "+": print(num1 + num2) 
+if equation == "-": print(num1 - num2) 
+if equation == "*": print(num1 * num2) 
+if equation == "/": print(num1 / num2) 
+if equation == "^": print(num1 ** num2) 

@@ -9,3 +9,7 @@ if equation == "-": print(num1 - num2)
 if equation == "*": print(num1 * num2) 
 if equation == "/": print(num1 / num2) 
 if equation == "^": print(num1 ** num2) 
+
+
+// A more "standard" way would be to use functions for each case in it's own function and then call the function as needed
+// The less stuff you have in the main block of code the better. This allows for better maintenance of the code and less duplicate code.

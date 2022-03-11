@@ -1,0 +1,60 @@
+using System;
+using System.IO;
+
+namespace Names
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int Z = 2;
+            Names();
+
+            for (int i = 0; i < Z; i++)
+            {
+                Console.WriteLine("Y / N");
+                var X = Console.ReadLine();
+                if (X == "Y")
+                {
+                    Console.WriteLine("Thank you!");
+                    i = 2;
+                    Console.ReadKey();
+                }
+                if (X == "N")
+                {
+                    Console.Write("Try again");
+                    Console.WriteLine();
+                    Names();
+                    i--;
+                }
+            }
+            static void Names()
+            {
+                Console.WriteLine("Enter your family names.");
+                {
+                    string[] names = new string[] { Console.ReadLine() };
+
+                    using (StreamWriter sw = new StreamWriter("names.txt"))
+                    {
+
+                        foreach (string s in names)
+                        {
+                            sw.WriteLine(s);
+                        }
+                    }
+
+                    // Read and show each line from the file.
+                    string line = "";
+                    Console.WriteLine("Is this correct?");
+                    using (StreamReader sr = new StreamReader("names.txt"))
+                    {
+                        while ((line = sr.ReadLine()) != null)
+                        {
+                            Console.WriteLine(line);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

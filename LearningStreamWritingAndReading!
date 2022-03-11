@@ -27,6 +27,11 @@ namespace Names
                     Names();
                     i--;
                 }
+                else {
+                    Console.Write("Error, try again.");
+                    Console.WriteLine();
+                    i--;
+                }
             }
             static void Names()
             {

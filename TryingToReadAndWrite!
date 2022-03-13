@@ -59,3 +59,17 @@ namespace Names
         }
     }
 }
+
+
+/*
+ Nice. It works! 
+ 
+ NOTES:
+    - Can you think of another way to handle the Y / N menu loop?
+        - Handle if the users enters something other than "Y" or "N"
+            - Try handling it using a case statement.
+    - I would split the functions to read and write to the file.
+    - Have user define file location
+    
+Let me know if you need any help! Good luck!
+*/

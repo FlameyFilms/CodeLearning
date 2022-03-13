@@ -7,29 +7,37 @@ namespace Names
     {
         static void Main(string[] args)
         {
-            int Z = 2;
-            Names();
+            bool Y = true;
+            WriteNames();
 
-            for (int i = 0; i < Z; i++)
+            while (Y == true)
             {
-                Console.WriteLine("Y / N");
+                ReadNames();
+                Console.WriteLine("Yes / No");
                 var X = Console.ReadLine();
-                if (X == "Y")
+               switch(X)
                 {
-                    Console.WriteLine("Thank you!");
-                    i = 2;
-                    Console.ReadKey();
+                    case "Y": case "Yes":case "YES":case "yes":
+
+                        Console.WriteLine("Insert file destination");
+                        Console.WriteLine("Thank you!");
+                        Y = false;
+                        Console.ReadKey();
+                        break;
+                    case "N":case "No":case "n":case "no":
+                        Console.Write("Try again.");
+                        Console.WriteLine();
+                        WriteNames();
+                        break;
+                    default:
+                        Console.WriteLine("Enter correct response.");
+                        break;
+
+
                 }
-                if (X == "N")
-                {
-                    Console.Write("Try again");
-                    Console.WriteLine();
-                    Names();
-                    i--;
-                }
-              
+
             }
-            static void Names()
+            static void WriteNames()
             {
                 Console.WriteLine("Enter your family names.");
                 {
@@ -43,7 +51,9 @@ namespace Names
                             sw.WriteLine(s);
                         }
                     }
-
+                }
+            }
+                    static void ReadNames() { 
                     // Read and show each line from the file.
                     string line = "";
                     Console.WriteLine("Is this correct?");
@@ -58,18 +68,16 @@ namespace Names
             }
         }
     }
-}
-
 
 /*
  Nice. It works! 
  
  NOTES:
-    - Can you think of another way to handle the Y / N menu loop?
-        - Handle if the users enters something other than "Y" or "N"
-            - Try handling it using a case statement.
-    - I would split the functions to read and write to the file.
-    - Have user define file location
+    - Can you think of another way to handle the Y / N menu loop? X
+        - Handle if the users enters something other than "Y" or "N" X
+            - Try handling it using a case statement. X
+    - I would split the functions to read and write to the file. X
+    - Have user define file location ?
     
 Let me know if you need any help! Good luck!
 */

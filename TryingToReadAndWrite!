@@ -15,7 +15,7 @@ namespace Names
                 ReadNames();
                 Console.WriteLine("Yes / No");
                 var X = Console.ReadLine();
-               switch(X)
+                switch(X)
                 {
                     case "Y": case "Yes":case "YES":case "yes":
 
@@ -32,8 +32,6 @@ namespace Names
                     default:
                         Console.WriteLine("Enter correct response.");
                         break;
-
-
                 }
 
             }
@@ -53,21 +51,21 @@ namespace Names
                     }
                 }
             }
-                    static void ReadNames() { 
-                    // Read and show each line from the file.
-                    string line = "";
-                    Console.WriteLine("Is this correct?");
-                    using (StreamReader sr = new StreamReader("names.txt"))
+            static void ReadNames() { 
+                // Read and show each line from the file.
+                string line = "";
+                Console.WriteLine("Is this correct?");
+                using (StreamReader sr = new StreamReader("names.txt"))
+                {
+                    while ((line = sr.ReadLine()) != null)
                     {
-                        while ((line = sr.ReadLine()) != null)
-                        {
-                            Console.WriteLine(line);
-                        }
+                        Console.WriteLine(line);
                     }
                 }
             }
         }
     }
+}
 
 /*
  Nice. It works! 

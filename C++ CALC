@@ -1,0 +1,41 @@
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    double x;
+    string y;
+    double z;
+    double num;
+    bool loop = true;
+    cin >> x;
+    cin >> y;
+    cin >> z;
+    while (loop == true) {
+    if (y == "+") {
+        num = x + z;
+        cout << x + z;
+    }
+     if (y == "-") {
+        num = x - z;
+        cout << x - z;
+    }
+     if (y == "*") {
+        num = x * z;
+        cout << x * z;
+    }
+     if (y == "/") {
+        num = x / z;
+        cout << x / z;
+     }
+    cout << "\n";
+    x = num;
+    cin >> y;
+    cin >> z;
+    }
+
+
+    return 0;
+}
